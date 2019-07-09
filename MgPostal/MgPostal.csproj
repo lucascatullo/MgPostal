@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\ClientApp\src\app\cierre\cierre.module.ts" />
+    <Content Remove="wwwroot\ClientApp\src\app\cierre\listasCierres.component.ts" />
+    <Content Remove="wwwroot\ClientApp\src\app\envioManagment\addEnvio.component.ts" />
+    <Content Remove="wwwroot\ClientApp\src\app\envioManagment\allEnvio.component.ts" />
+    <Content Remove="wwwroot\ClientApp\src\app\envioManagment\envio.module.ts" />
+    <Content Remove="wwwroot\ClientApp\src\app\envioManagment\listaEnvios.component.ts" />
+    <Content Remove="wwwroot\ClientApp\src\app\impresiones\impresiones-layout.component.ts" />
+    <Content Remove="wwwroot\ClientApp\src\app\impresiones\impresiones.module.ts" />
+    <Content Remove="wwwroot\ClientApp\src\app\models\configClasses.repository.ts" />
+    <Content Remove="wwwroot\ClientApp\src\app\models\envio.ts" />
+    <Content Remove="wwwroot\ClientApp\src\app\models\model.modules.ts" />
+    <Content Remove="wwwroot\ClientApp\src\app\models\repository.ts" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.NET.Sdk.Razor" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="2.1.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.Caching.SqlConfig.Tools" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\cierre\cierre.module.ts" />
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\cierre\listasCierres.component.ts" />
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\envioManagment\addEnvio.component.ts" />
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\envioManagment\allEnvio.component.ts" />
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\envioManagment\envio.module.ts" />
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\envioManagment\listaEnvios.component.ts" />
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\impresiones\impresiones-layout.component.ts" />
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\impresiones\impresiones.module.ts" />
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\models\configClasses.repository.ts" />
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\models\envio.ts" />
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\models\model.modules.ts" />
+    <TypeScriptCompile Include="wwwroot\ClientApp\src\app\models\repository.ts" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\ClientApp\src\app\Services\" />
+  </ItemGroup>
+
+
+
+</Project>
